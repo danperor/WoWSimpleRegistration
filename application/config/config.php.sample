@@ -12,7 +12,7 @@ baseurl
 page_title
     That's your website title. Example: "My WOW Private server!"
 language
-    Default website language (english/persian/italian/chinese-simplified/chinese-traditional/swedish/french/german/spanish/korean/russian)
+    Default website language (english/persian/italian/chinese-simplified/chinese-traditional/swedish/french/german/spanish/korean)
 supported_langs
 	List of languages supported, You can remove each language you don't want!
 	if you want to disable language changer, Change it to: $config['supported_langs'] = false;
@@ -30,8 +30,7 @@ $config['supported_langs'] = [
 	'french' => 'French',
 	'german' => 'German',
 	'spanish' => 'Spanish',
-	'korean' => 'Korean',
-	'russian' => 'Russian'
+	'korean' => 'Korean'
 ];
 /*===================================================================
 If you see a white screen or have an issue, you can enable it to see the errors.
@@ -80,15 +79,14 @@ If your server is WoD/Legion/BFA you should enable it!
 $config['battlenet_support'] = false;
 /*===================================================================
 If your core password encryption is SRP6, you need to enable it.
-For the last versions of the TrinityCore(3.3.5/master)/AzerothCore, you need to enable it. https://git.io/JJRH4 and https://git.io/JJrxq
+For last versions of the TrinityCore(3.3.5/master) you need to enable it. https://git.io/JJRH4 and https://git.io/JJrxq
 Enable that if you use the last version of TC.
-For old versions, Make sure this feature is disabled.
 You need to enable the GMP extension for PHP.
 =====================================================================
 ***************** GMP REQUIRED ********************
 ******Uncomment extension=gmp in your php.ini******
 =====================================================================*/
-$config['srp6_support'] = true; // READ COMMENTS, [Please ENABLE GMP]
+$config['srp6_support'] = false; // READ COMMENTS, [Please ENABLE GMP]
 /*===================================================================
 If you have an issue with top players or online players you can disable them!
 disable_top_players
