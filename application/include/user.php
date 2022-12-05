@@ -1,7 +1,7 @@
 <?php
 /**
  * @author Amin Mahmoudi (MasterkinG)
- * @copyright    Copyright (c) 2019 - 2021, MasterkinG32. (https://masterking32.com)
+ * @copyright    Copyright (c) 2019 - 2020, MasterkinG32. (https://masterking32.com)
  * @link    https://masterking32.com
  * @Description : It's not masterking32 framework !
  **/
@@ -21,10 +21,6 @@ class user
 
         if (!empty($_GET['enabletfa']) && !empty($_GET['account'])) {
             self::account_set_2fa($_GET['enabletfa'], $_GET['account']);
-        }
-
-        if (!empty($_POST['langchangever'])) {
-            self::lang_cookie_changer($_POST['langchange']);
         }
 
         if (!empty($_POST['submit'])) {
@@ -51,20 +47,6 @@ class user
                 $_SESSION['captcha'] = self::$captcha->getPhrase();
             }
         }
-    }
-
-    /**
-     * Language Changer
-     */
-    public static function lang_cookie_changer($getlang)
-    {
-		$supported_langs = get_config('supported_langs');
-		if(!empty($supported_langs) && !empty($supported_langs[$getlang]))
-		{
-			setcookie('website_lang', $getlang); //sets the language cookie to selected language
-			header("location: " . get_config("baseurl"));
-			exit();
-		}
     }
 
     /**
@@ -130,13 +112,13 @@ class user
             'email' => $antiXss->xss_clean(strtoupper($_POST['email'])),
             'sha_pass_hash' => $antiXss->xss_clean($bnet_hashed_pass)
         ]);
-		
+
         $bnet_account_id = database::$auth->id();
         $username = $bnet_account_id . '#1';
         database::$auth->insert('account', [
             'username' => $antiXss->xss_clean(strtoupper($username)),
-            get_core_config("salt_field") => $salt,
-            get_core_config("verifier_field") => $verifier,
+            'salt' => $salt,
+            'verifier' => $verifier,
             'email' => $antiXss->xss_clean(strtoupper($_POST['email'])),
             'expansion' => $antiXss->xss_clean(get_config('expansion')),
             'battlenet_account' => $bnet_account_id,
@@ -213,8 +195,8 @@ class user
             list($salt, $verifier) = getRegistrationData(strtoupper($_POST['username']), $_POST['password']);
             database::$auth->insert('account', [
                 'username' => $antiXss->xss_clean(strtoupper($_POST['username'])),
-                get_core_config("salt_field") => $salt,
-                get_core_config("verifier_field") => $verifier,
+                'salt' => $salt,
+                'verifier' => $verifier,
                 'email' => $antiXss->xss_clean(strtoupper($_POST['email'])),
                 //'reg_mail' => $antiXss->xss_clean(strtoupper($_POST['email'])),
                 'expansion' => $antiXss->xss_clean(get_config('expansion'))
@@ -305,15 +287,15 @@ class user
                 'id[=]' => $userinfo['id']
             ]);
         } else {
-            if (!verifySRP6($userinfo['username'], $_POST['old_password'], $userinfo[get_core_config("salt_field")], $userinfo[get_core_config("verifier_field")])) {
+            if (!verifySRP6($userinfo['username'], $_POST['old_password'], $userinfo['salt'], $userinfo['verifier'])) {
                 error_msg(lang('old_password_not_valid'));
                 return false;
             }
 
             list($salt, $verifier) = getRegistrationData(strtoupper($userinfo['username']), $_POST['password']);
             database::$auth->update('account', [
-                get_core_config("salt_field") => $salt,
-                get_core_config("verifier_field") => $verifier
+                'salt' => $salt,
+                'verifier' => $verifier
             ], [
                 'id[=]' => $userinfo['id']
             ]);
@@ -385,15 +367,15 @@ class user
                 'id[=]' => $userinfo['id']
             ]);
         } else {
-            if (!verifySRP6($userinfo['username'], $_POST['old_password'], $userinfo[get_core_config("salt_field")], $userinfo[get_core_config("verifier_field")])) {
+            if (!verifySRP6($userinfo['username'], $_POST['old_password'], $userinfo['salt'], $userinfo['verifier'])) {
                 error_msg(lang('old_password_not_valid'));
                 return false;
             }
 
             list($salt, $verifier) = getRegistrationData(strtoupper($userinfo['username']), $_POST['password']);
             database::$auth->update('account', [
-                get_core_config("salt_field") => $salt,
-                get_core_config("verifier_field") => $verifier
+                'salt' => $salt,
+                'verifier' => $verifier
             ], [
                 'id[=]' => $userinfo['id']
             ]);
@@ -522,8 +504,8 @@ class user
             } else {
                 list($salt, $verifier) = getRegistrationData(strtoupper($userinfo['username']), $new_password);
                 database::$auth->update('account', [
-                    get_core_config("salt_field") => $salt,
-                    get_core_config("verifier_field") => $verifier,
+                    'salt' => $salt,
+                    'verifier' => $verifier,
                     'restore_key' => '1'
                 ], [
                     'id[=]' => $userinfo['id']
@@ -553,8 +535,8 @@ class user
                 } else {
                     list($salt, $verifier) = getRegistrationData(strtoupper($userinfo['username']), $new_password);
                     database::$auth->update('account', [
-                        get_core_config("salt_field") => $salt,
-                        get_core_config("verifier_field") => $verifier,
+                        'salt' => $salt,
+                        'verifier' => $verifier,
                         'restore_key' => '1'
                     ], [
                         'id[=]' => $userinfo['id']

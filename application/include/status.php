@@ -1,7 +1,7 @@
 <?php
 /**
  * @author Amin Mahmoudi (MasterkinG)
- * @copyright    Copyright (c) 2019 - 2021, MasterkinG32. (https://masterking32.com)
+ * @copyright    Copyright (c) 2019 - 2020, MasterkinG32. (https://masterking32.com)
  * @link    https://masterking32.com
  * @Description : It's not masterking32 framework !
  **/
@@ -76,15 +76,6 @@ class status
     {
         $datas = database::$chars[$realmID]->select("characters", array("name", "race", "class", "gender", "level", "totaltime"), ["ORDER" => ["totaltime" => "DESC"], 'LIMIT' => 10]);
         if (!empty($datas[0]["totaltime"])) {
-            return $datas;
-        }
-        return false;
-    }
-
-    public static function get_top_gold($realmID)
-    {
-        $datas = database::$chars[$realmID]->select("characters", array("name", "level", "totaltime", "money"), ["ORDER" => ["money" => "DESC"], 'LIMIT' => 10]);
-        if (!empty($datas[0]["money"])) {
             return $datas;
         }
         return false;

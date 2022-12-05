@@ -1,7 +1,7 @@
 <?php
 /**
  * @author Amin Mahmoudi (MasterkinG)
- * @copyright    Copyright (c) 2019 - 2021, MasterkinG32. (https://masterking32.com)
+ * @copyright    Copyright (c) 2019 - 2020, MasterkinG32. (https://masterking32.com)
  * @link    https://masterking32.com
  * @Description : It's not masterking32 framework !
  **/
@@ -13,11 +13,6 @@ $language['tpl_advance_custom_css'] = '';
 $language['tpl_icecrown_custom_css'] = '';
 $language['tpl_kaelthas_custom_css'] = '';
 $language['tpl_battleforazeroth_custom_css'] = '';
-
-// Lang changer
-$language['change_lang_head'] = 'Language Changer';
-$language['change_lang_form_head'] = 'Select Language';
-$language['change_lang_sub'] = 'Change';
 
 $language['welcome_to'] = 'Welcome to';
 $language['welcome_message'] = 'Bienvenido a nuestro servidor privado, unete a nosotros!';
@@ -77,7 +72,6 @@ $language['class'] = 'Clase';
 $language['level'] = 'Nivel';
 $language['top_players'] = 'Jugadores top';
 $language['play_time'] = 'Tiempo de juego';
-$language['gold'] = 'Oro';
 $language['killers'] = 'Asesinos';
 $language['kills'] = 'Matados';
 $language['honor_points'] = 'Puntos de honor';
