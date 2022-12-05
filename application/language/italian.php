@@ -1,7 +1,7 @@
 <?php
 /**
  * @author Amin Mahmoudi (MasterkinG)
- * @copyright    Copyright (c) 2019 - 2021, MasterkinG32. (https://masterking32.com)
+ * @copyright    Copyright (c) 2019 - 2022, MsaterkinG32 Team, Inc. (https://masterking32.com)
  * @link    https://masterking32.com
  * @Description : It's not masterking32 framework !
  **/
@@ -12,12 +12,6 @@ $language['tpl_light_custom_css'] = '';
 $language['tpl_advance_custom_css'] = '';
 $language['tpl_icecrown_custom_css'] = '';
 $language['tpl_kaelthas_custom_css'] = '';
-$language['tpl_battleforazeroth_custom_css'] = '';
-
-// Lang changer
-$language['change_lang_head'] = 'Language Changer';
-$language['change_lang_form_head'] = 'Select Language';
-$language['change_lang_sub'] = 'Change';
 
 $language['welcome_to'] = 'Benvenuto in';
 $language['welcome_message'] = 'Benvenuto nel nostro server privato, Partecipa adesso!';
@@ -46,7 +40,7 @@ $language['create_account_tip1'] = 'Prima di tutto, devi creare un account. L\' 
 $language['download_game'] = 'Scarica il gioco';
 $language['create_account_tip2'] = 'Installa World of Warcraft. Puoi scaricarlo (legalmente) da qui: Windows o Mac. Assicurati di essere alla versione di gioco '. get_config('game_version').'. Eventuali patch e download link sono reperibili di seguito.';
 $language['setup_game'] = 'Configura il gioco';
-$language['create_account_tip3'] = 'Apri la cartella "World of Warcraft". Il percorso dei default dela cartella è "C:\Program Files\World of Warcraft". Una volta trovata, aprila ed apri la cartella "Data", quindi vai nella cartella "enUS" o "enGB" ed apri il file realmlist.wtf.';
+$language['create_account_tip3'] = 'Apri la cartella "World of Warcraft". Il percorso dei default dela cartella è "C:\Program Files\World of Warcraft". Una volta trovata, aprila ed apri la cartella "Data", quindi vai nella cartella "enUS" o "enGB".';
 $language['change_server_address'] = 'Cambia l\'indirizzo del server';
 $language['create_account_tip4'] = 'Cancella tutto il contenuto e cambialo in:';
 $language['server_rules'] = 'Regole del server';
@@ -77,7 +71,6 @@ $language['class'] = 'Class';
 $language['level'] = 'Level';
 $language['top_players'] = 'Top Players';
 $language['play_time'] = 'Play Time';
-$language['gold'] = 'Oro';
 $language['killers'] = 'Killers';
 $language['kills'] = 'Kills';
 $language['honor_points'] = 'Honor Points';
@@ -91,7 +84,7 @@ $language['frequently_questions'] = 'Domande frequenti (FAQ)';
 $language['question'] = 'Domanda';
 $language['answer'] = 'Risposta';
 $language['location'] = 'Locazione';
-$language['call'] = 'Call';
+$language['call'] = 'Contattaci';
 $language['restore_account_password'] = 'Ripristina password dell\'account';
 $language['about_server'] = 'Informazioni server';
 $language['game_version'] = 'Versione del gioco';

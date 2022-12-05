@@ -1,7 +1,7 @@
 <?php
 /**
  * @author Amin Mahmoudi (MasterkinG)
- * @copyright    Copyright (c) 2019 - 2021, MasterkinG32. (https://masterking32.com)
+ * @copyright    Copyright (c) 2019 - 2022, MsaterkinG32 Team, Inc. (https://masterking32.com)
  * @link    https://masterking32.com
  * @Description : It's not masterking32 framework !
  **/
@@ -12,12 +12,6 @@ $language['tpl_light_custom_css'] = '';
 $language['tpl_advance_custom_css'] = '#hero .btn-get-started, .why-us .accordion-list a, .faq .faq-list a{ font-family: vazir;direction: rtl;} .icon-box, .content, .why-us, .faq, .contact .info { text-align: right;} .services .icon-box i,.contact .info i { float: right; margin-left: 10px;}';
 $language['tpl_icecrown_custom_css'] = '';
 $language['tpl_kaelthas_custom_css'] = '';
-$language['tpl_battleforazeroth_custom_css'] = '.hero-section, .hero-slider, .progressBar, .owl-stage-outer, .owl-nav, .owl-dots, .owl-stage{ direction: ltr;} p, .site-btn, .site-btn-login{font-family: vazir;}';
-
-// Lang changer
-$language['change_lang_head'] = 'Language Changer';
-$language['change_lang_form_head'] = 'Select Language';
-$language['change_lang_sub'] = 'Change';
 
 $language['welcome_to'] = 'خوش آمدید به';
 $language['welcome_message'] = 'به سرور شخصی ما خوش آمدید، هم اکنون به جمع ما بپیوندید.';
@@ -77,7 +71,6 @@ $language['class'] = 'کلاس';
 $language['level'] = 'سطح';
 $language['top_players'] = 'بازیکنان برتر';
 $language['play_time'] = 'مدت بازی';
-$language['gold'] = 'طلا';
 $language['killers'] = 'قاتلین';
 $language['kills'] = 'کشته ها';
 $language['honor_points'] = 'هانور پوینت';

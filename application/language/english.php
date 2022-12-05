@@ -1,7 +1,7 @@
 <?php
 /**
  * @author Amin Mahmoudi (MasterkinG)
- * @copyright    Copyright (c) 2019 - 2021, MasterkinG32. (https://masterking32.com)
+ * @copyright    Copyright (c) 2019 - 2022, MsaterkinG32 Team, Inc. (https://masterking32.com)
  * @link    https://masterking32.com
  * @Description : It's not masterking32 framework !
  **/
@@ -12,12 +12,6 @@ $language['tpl_light_custom_css'] = '';
 $language['tpl_advance_custom_css'] = '';
 $language['tpl_icecrown_custom_css'] = '';
 $language['tpl_kaelthas_custom_css'] = '';
-$language['tpl_battleforazeroth_custom_css'] = '';
-
-// Lang changer
-$language['change_lang_head'] = 'Language Changer';
-$language['change_lang_form_head'] = 'Select Language';
-$language['change_lang_sub'] = 'Change';
 
 $language['welcome_to'] = 'Welcome to';
 $language['welcome_message'] = 'Welcome to our private server, Join us now!';
@@ -77,7 +71,6 @@ $language['class'] = 'Class';
 $language['level'] = 'Level';
 $language['top_players'] = 'Top Players';
 $language['play_time'] = 'Play Time';
-$language['gold'] = 'Gold';
 $language['killers'] = 'Killers';
 $language['kills'] = 'Kills';
 $language['honor_points'] = 'Honor Points';
@@ -104,15 +97,15 @@ $language['old_password_not_valid'] = 'Old password is not valid.';
 $language['passwords_not_equal'] = 'Passwords is not equal.';
 $language['passwords_length'] = 'Password length is not valid.';
 $language['username_length'] = 'Username length is not valid.';
-$language['username_or_email_exists'] = 'Username or Email already exists.';
-$language['email_exists'] = 'Email already exists.';
-$language['username_exists'] = 'Username already exists.';
+$language['username_or_email_exists'] = 'Username or Email is exists.';
+$language['email_exists'] = 'Email is exists.';
+$language['username_exists'] = 'Username is exists.';
 $language['account_created'] = 'Your account has been created.';
 $language['error_try_again'] = 'ERROR!, Please try again!';
 $language['password_changed'] = 'Password has been changed.';
 $language['email_not_correct'] = 'Email is not correct.';
 $language['username_not_correct'] = 'Username is not correct.';
-$language['check_your_email'] = 'Check your email. (Check SPAM/Junk too).';
+$language['check_your_email'] = 'Check your email, (Check SPAM/Junk too).';
 $language['account_is_not_valid'] = 'Account is not valid.';
 $language['vote_site_not_valid'] = 'Vote site is not valid!';
 $language['you_already_voted'] = 'You already voted on this website.';
