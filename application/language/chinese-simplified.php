@@ -1,7 +1,7 @@
 <?php
 /**
  * @author Amin Mahmoudi (MasterkinG)
- * @copyright    Copyright (c) 2019 - 2021, MasterkinG32. (https://masterking32.com)
+ * @copyright    Copyright (c) 2019 - 2022, MsaterkinG32 Team, Inc. (https://masterking32.com)
  * @link    https://masterking32.com
  * @Description : It's not masterking32 framework !
  **/
@@ -13,11 +13,6 @@ $language['tpl_advance_custom_css'] = '';
 $language['tpl_icecrown_custom_css'] = '';
 $language['tpl_kaelthas_custom_css'] = '';
 $language['tpl_battleforazeroth_custom_css'] = '';
-
-// Lang changer
-$language['change_lang_head'] = 'Language Changer';
-$language['change_lang_form_head'] = 'Select Language';
-$language['change_lang_sub'] = 'Change';
 
 $language['welcome_to'] = '欢迎来到';
 $language['welcome_message'] = '欢迎来到我们的服务器，赶快加入我们吧！';
@@ -77,7 +72,6 @@ $language['class'] = '职业';
 $language['level'] = '级别';
 $language['top_players'] = '英雄榜';
 $language['play_time'] = '游戏时间';
-$language['gold'] = '金子';
 $language['killers'] = '击杀榜';
 $language['kills'] = '击杀';
 $language['honor_points'] = '荣誉点数';

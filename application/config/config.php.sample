@@ -1,7 +1,7 @@
 <?php
 /**
  * @author Amin Mahmoudi (MasterkinG)
- * @copyright    Copyright (c) 2019 - 2021, MasterkinG32. (https://masterking32.com)
+ * @copyright    Copyright (c) 2019 - 2022, MsaterkinG32 Team, Inc. (https://masterking32.com)
  * @link    https://masterking32.com
  * @Description : It's not masterking32 framework !
  **/
@@ -12,32 +12,16 @@ baseurl
 page_title
     That's your website title. Example: "My WOW Private server!"
 language
-    Default website language (english/persian/italian/chinese-simplified/chinese-traditional/swedish/french/german/spanish/korean/russian)
-supported_langs
-	List of languages supported, You can remove each language you don't want!
-	if you want to disable language changer, Change it to: $config['supported_langs'] = false;
+    Website language (english/persian/italian/chinese-simplified/chinese-traditional)
 =====================================================================*/
-$config['baseurl'] = "http://localhost"; // MAKE SURE USE VALID URL, If you have any issue loading images and template please check this field
+$config['baseurl'] = "http://localhost";
 $config['page_title'] = "Simple Register";
 $config['language'] = "english";
-$config['supported_langs'] = [
-	'english' => 'English',
-	'persian' => 'Persian',
-	'italian' => 'Italian',
-	'chinese-simplified' => 'Chinese Simplified',
-	'chinese-traditional' => 'Chinese Traditional',
-	'swedish' => 'Swedish',
-	'french' => 'French',
-	'german' => 'German',
-	'spanish' => 'Spanish',
-	'korean' => 'Korean',
-	'russian' => 'Russian'
-];
 /*===================================================================
 If you see a white screen or have an issue, you can enable it to see the errors.
 Note that after testing, be sure to disable this option.
 =====================================================================*/
-$config['debug_mode'] = false; // ENABLE Debug mode if you got blank screen or 503 error, to see what happen?
+$config['debug_mode'] = false;
 /*===================================================================
 Your server information.
 realmlist
@@ -64,31 +48,18 @@ If you want to use advance template, Your images and backgrounds will be changed
 =====================================================================*/
 $config['expansion'] = '2';
 /*===================================================================
-Core Type:
-0 = TrinityCore
-1 = AzerothCore
-2 = AshamaneCore
-3 = Skyfire Project
-4 = OregonCore
-5 = CMangos
-10 = etc
-=====================================================================*/
-$config['server_core'] = 0;
-/*===================================================================
 If your server is WoD/Legion/BFA you should enable it!
 =====================================================================*/
 $config['battlenet_support'] = false;
 /*===================================================================
 If your core password encryption is SRP6, you need to enable it.
-For the last versions of the TrinityCore(3.3.5/master)/AzerothCore, you need to enable it. https://git.io/JJRH4 and https://git.io/JJrxq
+For last versions of the TrinityCore(3.3.5/master) you need to enable it. https://git.io/JJRH4 and https://git.io/JJrxq
 Enable that if you use the last version of TC.
-For old versions, Make sure this feature is disabled.
 You need to enable the GMP extension for PHP.
 =====================================================================
-***************** GMP REQUIRED ********************
 ******Uncomment extension=gmp in your php.ini******
 =====================================================================*/
-$config['srp6_support'] = true; // READ COMMENTS, [Please ENABLE GMP]
+$config['srp6_support'] = false;
 /*===================================================================
 If you have an issue with top players or online players you can disable them!
 disable_top_players
@@ -96,8 +67,8 @@ disable_top_players
 disable_online_players
     Disable online players page [true: Hide online players page]
 disable_changepassword
-    Disable change password
-    Change this to true, If you are using SOAP for registration.
+    Disable change password - [Enable it for CMangos and servers with SRP6]
+    For CMangos and servers with SRP6 you can enable change password command for players (in-game)
 =====================================================================*/
 $config['disable_top_players'] = false;
 $config['disable_online_players'] = false;
@@ -329,4 +300,4 @@ $config['realmlists'] = array( // Add your realmlist here
 
 
 
-$config['script_version'] = '2.0.2';
+$config['script_version'] = '2.0.0';
