@@ -50,18 +50,17 @@ require_once 'header.php'; ?>
                         <?php elang('welcome_message'); ?>
                         <hr style="border-color: #00CCFF;">
                         <p style="text-align: justify">
-                            This is a sample text, This is a sample text, This is a sample text, This is a sample
-                            text, This is a sample text, This is a sample text, This is a sample text, This is a
-                            sample text, This is a sample text, This is a sample text, This is a sample text, This
-                            is a sample text, This is a sample text, This is a sample text, This is a sample text,
-                            This is a sample text, This is a sample text, This is a sample text, This is a sample
-                            text, This is a sample text, This is a sample text, This is a sample text, This is a
-                            sample text, This is a sample text, This is a sample text, This is a sample text, This
-                            is a sample text, This is a sample text, This is a sample text, This is a sample text,
-                            This is a sample text, This is a sample text, This is a sample text, This is a sample
-                            text, This is a sample text, This is a sample text, This is a sample text, This is a
-                            sample text, This is a sample text.
+                            欢迎大家来到公益服！
+                            关于下载：
+                            1.百度网盘：
+                            链接：https://pan.baidu.com/s/1HCwVln9FdCU1friRiLCUVw  提取码：8oct
+                            2.天翼云：敬请期待
                         </p>
+                        <ul>
+                        <li><?php elang('rule'); ?> 4.</li>
+                        <li><?php elang('rule'); ?> 5.</li>
+                        <li><?php elang('rule'); ?> 6.</li>
+                    </ul>
                         <p><?php elang('edit_on'); ?> template/<?php echo $antiXss->xss_clean(get_config("template")); ?>
                             /tpl/main.php</p>
                     </div>

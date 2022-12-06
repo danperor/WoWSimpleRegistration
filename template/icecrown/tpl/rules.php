@@ -11,11 +11,10 @@
     <?php elang('read_before_register'); ?>
 </p>
 <ul>
-    <li><?php elang('rule'); ?> 1.</li>
-    <li><?php elang('rule'); ?> 2.</li>
-    <li><?php elang('rule'); ?> 3.</li>
-    <li><?php elang('rule'); ?> 4.</li>
-    <li><?php elang('rule'); ?> 5.</li>
-    <li><?php elang('rule'); ?> 6.</li>
-    <li><?php elang('edit_on'); ?> <b>"/template/<?php echo $antiXss->xss_clean(get_config("template")); ?>/tpl/rules.php"</b>.</li>
+    <li><?php elang('rule'); ?> 1.账户名仅允许使用英文和数字</li>
+    <li><?php elang('rule'); ?> 2.不要直接使用邮箱作为账户名</li>
+    <li><?php elang('rule'); ?> 3.尽量使用英文字母开头</li>
+    <!-- <li><?php elang('rule'); ?> 4.</li> -->
+    <!-- <li><?php elang('rule'); ?> 5.</li> -->
+    <!-- <li><?php elang('rule'); ?> 6.</li> -->
 </ul>
