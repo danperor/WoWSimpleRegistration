@@ -11,7 +11,7 @@ use SebastianBergmann\Timer\Timer;
 ?>
 <div class="row">
     <div class="text-center box1">
-        Developed by <a href="http://masterking32.com">MasterkinG32.CoM</a>
+        Developed by <a href="http://abcdefgh.org">abcdefgh.org</a>
         - <?php echo "Load " . Timer::resourceUsage(); ?>
     </div>
 </div>

@@ -120,3 +120,4 @@ $language['captcha_not_valid'] = '보안문자가 틀렸습니다.';
 $language['hcaptcha_not_valid'] = '보안문자가(HCaptcha) 틀렸습니다.';
 $language['recaptcha_not_valid'] = '보안문자가(ReCaptcha) 틀렸습니다.';
 $language['captcha_required'] = '보안문자가(Captcha) 필요합니다.';
+$language['notice'] = 'method ';

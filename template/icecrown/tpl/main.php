@@ -51,18 +51,18 @@ require_once 'header.php'; ?>
                         <hr style="border-color: #00CCFF;">
                         <p style="text-align: justify">
                             欢迎大家来到公益服！
-                            关于下载：
-                            1.百度网盘：
-                            链接：https://pan.baidu.com/s/1HCwVln9FdCU1friRiLCUVw  提取码：8oct
-                            2.天翼云：敬请期待
+                            此服仅支持原版客户端3.3.5a版本，如果您有该客户端，无需下载。仅需修改配置即可，请查看<如何连接>页面。
                         </p>
+                        <p>
                         <ul>
-                        <li><?php elang('rule'); ?> 4.</li>
-                        <li><?php elang('rule'); ?> 5.</li>
-                        <li><?php elang('rule'); ?> 6.</li>
-                    </ul>
-                        <p><?php elang('edit_on'); ?> template/<?php echo $antiXss->xss_clean(get_config("template")); ?>
-                            /tpl/main.php</p>
+                        <li style="text-align: left"><?php elang('notice'); ?> 1.百度网盘：
+                            链接：https://pan.baidu.com/s/1HCwVln9FdCU1friRiLCUVw  提取码：8oct</li>
+                        <li style="text-align: left"><?php elang('notice'); ?> 2.天翼云：敬请期待</li>
+                        <li style="text-align: left"><?php elang('notice'); ?> 3.阿里云盘</li>
+                        </ul>
+                        </p>
+                       
+                        <p></p>
                     </div>
                     <div class="tab-pane fade in <?php echo(!(empty($error_error) && empty($success_msg)) ? 'active' : ''); ?>"
                          id="pills-register">
@@ -517,10 +517,10 @@ require_once 'header.php'; ?>
             </form>
             </div>
              <?php } ?>
-            <div class="box1">
+            <div class="box1" style="display: none;">
                 Discord
                 <hr style="border-color: #00CCFF;">
-                <iframe src="https://discordapp.com/widget?id=376650959532589057&theme=dark" width="330"
+                <iframe src="https://cn.bing.com/" width="330"
                         height="600" allowtransparency="true" frameborder="0"></iframe>
             </div>
         </div>

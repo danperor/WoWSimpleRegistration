@@ -120,3 +120,4 @@ $language['captcha_not_valid'] = '驗證碼不存在';
 $language['hcaptcha_not_valid'] = '驗證碼不存在。';
 $language['recaptcha_not_valid'] = '驗證碼不存在。';
 $language['captcha_required'] = '需求驗證碼。';
+$language['notice'] = '方式';

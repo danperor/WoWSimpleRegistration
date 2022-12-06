@@ -13,8 +13,8 @@
 <ul>
     <li><?php elang('rule'); ?> 1.账户名仅允许使用英文和数字</li>
     <li><?php elang('rule'); ?> 2.不要直接使用邮箱作为账户名</li>
-    <li><?php elang('rule'); ?> 3.尽量使用英文字母开头</li>
-    <!-- <li><?php elang('rule'); ?> 4.</li> -->
-    <!-- <li><?php elang('rule'); ?> 5.</li> -->
+    <li><?php elang('rule'); ?> 3.可以使用纯数字如手机号作为用户名</li>
+    <li><?php elang('rule'); ?> 4.目前密码找回有点问题，正在开发中，因此注册或改密码后请务必牢记</li>
+    <li><?php elang('rule'); ?> 5.如若密码不幸忘记，请联系人工手动处理</li>
     <!-- <li><?php elang('rule'); ?> 6.</li> -->
 </ul>

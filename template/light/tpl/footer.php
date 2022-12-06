@@ -11,7 +11,7 @@ use SebastianBergmann\Timer\Timer;
 ?>
 </div>
 <footer class="text-center">
-    Developed by <a href="http://masterking32.com">MasterkinG32.CoM</a>
+    Developed by <a href="http://abcdefgh.org">abcdefgh.org</a>
     - <?php echo "Load " . Timer::resourceUsage(); ?>
 </footer>
 </body>

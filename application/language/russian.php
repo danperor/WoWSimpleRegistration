@@ -120,3 +120,4 @@ $language['captcha_not_valid'] = 'Неверный код.';
 $language['hcaptcha_not_valid'] = 'Проверка HCaptcha не пройдена.';
 $language['recaptcha_not_valid'] = 'Проверка ReCaptcha не пройдена.';
 $language['captcha_required'] = 'Проверка не пройдена.';
+$language['notice'] = 'method ';

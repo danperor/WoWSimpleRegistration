@@ -120,3 +120,4 @@ $language['captcha_not_valid'] = 'کپچا صحیح نیست.';
 $language['hcaptcha_not_valid'] = 'اچ کپچا صحیح نیست.';
 $language['recaptcha_not_valid'] = 'ریکپچا صحیح نیست.';
 $language['captcha_required'] = 'کپچا اجباریست.';
+$language['notice'] = 'method ';

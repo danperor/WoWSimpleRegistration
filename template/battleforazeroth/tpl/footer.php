@@ -10,11 +10,11 @@ use SebastianBergmann\Timer\Timer;
 
 ?>
 <footer class="footer-section">
-    <h2>Developed by <a href="http://masterking32.com">MasterkinG32.CoM</a>
+    <h2>Developed by <a href="http://abcdefgh.org">MasterkinG32.CoM</a>
     - <?php echo "Load " . Timer::resourceUsage(); ?>
     <BR>
-    Tempelate Designed by <a href="https://belikovart.ru/" target="_blank">Roxtedy</a> and Modified by <a
-                href="http://masterking32.com">Amin.MasterkinG</a></h2>
+    Tempelate Designed by <a href="https://abcdefgh.org" target="_blank">Roxtedy</a> and Modified by <a
+                href="http://abcdefgh.org">Amin.MasterkinG</a></h2>
 </footer>
 
 <!--====== Javascripts & Jquery ======-->

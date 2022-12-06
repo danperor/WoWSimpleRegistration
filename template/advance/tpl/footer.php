@@ -21,11 +21,11 @@ use SebastianBergmann\Timer\Timer;
     </div>
     <div class="container footer-bottom clearfix">
         <div class="credits">
-            Developed by <a href="http://masterking32.com">MasterkinG32.CoM</a>
+            Developed by <a href="http://abcdefgh.org">abcdefgh.org</a>
             - <?php echo "Load " . Timer::resourceUsage(); ?>
             <BR>
             Tempelate Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> and Modified by <a
-                    href="http://masterking32.com">Amin.MasterkinG</a>
+                    href="http://www.abcdefgh.org">Amin.MasterkinG</a>
         </div>
     </div>
 </footer>

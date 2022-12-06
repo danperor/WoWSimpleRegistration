@@ -24,7 +24,7 @@
                         <div class="email">
                             <i class="icofont-envelope"></i>
                             <h4><?php elang('email'); ?>:</h4>
-                            <p>info@example.com</p>
+                            <p>kirinbarba@gmail.com</p>
                         </div>
                         <div class="phone">
                             <i class="icofont-phone"></i>
@@ -33,8 +33,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
-                    <iframe src="https://discordapp.com/widget?id=376650959532589057&theme=dark"
+                <div class="col-lg-8 mt-5 mt-lg-0" 
+                data-aos="fade-left" data-aos-delay="100" 
+                style="display: none;">
+                    <iframe src="https://cn.bing.com/"
                             style="border:0;width: 100%; height: 100%;"></iframe>
                 </div>
             </div>

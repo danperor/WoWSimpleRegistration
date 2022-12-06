@@ -120,3 +120,4 @@ $language['captcha_not_valid'] = 'El captcha no es valido';
 $language['hcaptcha_not_valid'] = 'HCaptcha no es valido.';
 $language['recaptcha_not_valid'] = 'ReCaptcha no es valido.';
 $language['captcha_required'] = 'Se requiere rellenar el captcha de manera correcta.';
+$language['notice'] = 'method ';
