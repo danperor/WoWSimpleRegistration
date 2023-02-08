@@ -46,6 +46,7 @@ $language['create_account_tip1'] = 'First of all, you must create an account. Th
 $language['download_game'] = 'Download the game';
 $language['create_account_tip2'] = 'Install World of Warcraft. You can download it (legally) from here: Windows or Mac. Make sure to upgrade to our current supported patch, which is '. get_config('game_version').'. Patch mirrors can be found here.';
 $language['setup_game'] = 'Setup the game';
+$language['create_account_tip2_3'] ='接下来你就可以使用登陆器畅游游戏了(下面3、4、5步骤就可以跳过忽略),如果你不想使用登陆器，则需要根据下面步骤 3,4,5继续操作。在这里下载<Wow登录.exe>';
 $language['create_account_tip3'] = 'Open up the "World of Warcraft" directory. The default directory is "C:\Program Files\World of Warcraft". When you\'ve found it, open up the directory called "data", then go into the directory called either enUS or enGB, depending on your client language.';
 $language['change_server_address'] = 'Change server address';
 $language['create_account_tip4'] = 'Erase all text and change it to:';
@@ -121,4 +122,7 @@ $language['hcaptcha_not_valid'] = 'HCaptcha is not valid.';
 $language['recaptcha_not_valid'] = 'ReCaptcha is not valid.';
 $language['captcha_required'] = 'Captcha is required.';
 $language['notice'] = 'method ';
-
+$language['client_md5'] = 'client MD5';
+$language['file_name'] = '文件名:';
+$language['file_md5'] = 'MD5:';
+$language['create_account_tip5'] = '在你的浏览器中输入ping.pe然后按回车，你的浏览器上第一行会显示如：Your IP xxx.xxx.xxx.xxx 的字样，这个就是你的IP，将你的IP告诉我们。或者直接在百度搜索框中输入：IP，将浏览器上显示的你的IP告诉我们，以便将你的IP加入我们的服务器白名单。' ;

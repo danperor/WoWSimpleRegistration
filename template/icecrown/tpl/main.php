@@ -8,7 +8,7 @@
 require_once 'header.php'; ?>
 <div class="row">
     <div class="main-box">
-        <div class="col-md-8" style="margin-top: 20px;">
+        <div class="col-md-8" style="margin-top: 0px;">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -23,11 +23,11 @@ require_once 'header.php'; ?>
                              alt="WoW" style="width:100%;">
                     </div>
                     <div class="item">
-                        <img src="<?php echo $antiXss->xss_clean(get_config("baseurl")); ?>/template/<?php echo $antiXss->xss_clean(get_config("template")); ?>/images/slide1.jpg"
+                        <img src="<?php echo $antiXss->xss_clean(get_config("baseurl")); ?>/template/<?php echo $antiXss->xss_clean(get_config("template")); ?>/images/slide2.jpg"
                              alt="WoW" style="width:100%;">
                     </div>
                     <div class="item">
-                        <img src="<?php echo $antiXss->xss_clean(get_config("baseurl")); ?>/template/<?php echo $antiXss->xss_clean(get_config("template")); ?>/images/slide1.jpg"
+                        <img src="<?php echo $antiXss->xss_clean(get_config("baseurl")); ?>/template/<?php echo $antiXss->xss_clean(get_config("template")); ?>/images/slide3.jpg"
                              alt="WoW" style="width:100%;">
                     </div>
                 </div>
@@ -50,18 +50,18 @@ require_once 'header.php'; ?>
                         <?php elang('welcome_message'); ?>
                         <hr style="border-color: #00CCFF;">
                         <p style="text-align: justify">
-                            欢迎大家来到公益服！
+                            欢迎大家来到公益Z服！
                             此服仅支持原版客户端3.3.5a版本，如果您有该客户端，无需下载。仅需修改配置即可，请查看<如何连接>页面。
                         </p>
                         <p>
                         <ul>
                         <li style="text-align: left"><?php elang('notice'); ?> 1.百度网盘：
                             链接：https://pan.baidu.com/s/1HCwVln9FdCU1friRiLCUVw  提取码：8oct</li>
-                        <li style="text-align: left"><?php elang('notice'); ?> 2.天翼云：敬请期待</li>
-                        <li style="text-align: left"><?php elang('notice'); ?> 3.阿里云盘</li>
+                        <li style="text-align: left"><?php elang('notice'); ?> 2.天翼云盘：https://cloud.189.cn/t/uiiYrq2MVFNn （访问码：vuo2），您可能需要安装天翼云盘客户端，下载地址：https://cloud.189.cn/web/static/download-client/index.html</li>
+                        <li style="text-align: left"><?php elang('notice'); ?> 3.点击链接下载： <a style="text-align: left" href="http://8.142.12.63:18880/" target="_blank">http://8.142.12.63:18880/</a> 请下载完后自助校验文件MD5以确保文件未被篡改，由于文件较大，3.2.2客户端拆分成3个压缩包，请全部下载后再行解压</li>
+                        <p></p>
                         </ul>
                         </p>
-                       
                         <p></p>
                     </div>
                     <div class="tab-pane fade in <?php echo(!(empty($error_error) && empty($success_msg)) ? 'active' : ''); ?>"
@@ -490,13 +490,29 @@ require_once 'header.php'; ?>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 sidebar">
+        <div class="col-md-4 sidebar" style="margin-top: 0px;">
             <div class="box1">
                 <?php elang('server_information'); ?>
                 <hr style="border-color: #00CCFF;">
                 <p><?php elang('realmlist'); ?>: <span style="color: yellow;"><?php echo get_config('realmlist'); ?></span></p>
                 <?php echo(!empty(get_config("game_version")) ? '<p>' . lang('game_version') . ': <span style="color: yellow;">' . get_config("game_version") . '</span></p>' : ''); ?>
                 <?php echo(!empty(get_config("patch_location")) ? '<p>' . lang('server_patch') . ': <a href="' . get_config("patch_location") . '" style="color: yellow;">' . lang('download') . '</a></p>' : ''); ?>
+            </div>
+            <div class="box1">
+                <?php elang('client_md5'); ?>
+                <hr style="border-color: #00CCFF;">
+                <p>
+                        <ul>
+                        <li style="text-align: left"><?php elang('file_name'); ?> 3.2.2-3.3.5a补丁包.7z</li>
+                        <li style="text-align: left"><?php elang('file_md5'); ?>be99e7ef9c926c16b59408daf2a540b2</li>
+                        <li style="text-align: left"><?php elang('file_name'); ?> WOW3.2.2客户端.7z.001</li>
+                        <li style="text-align: left"><?php elang('file_md5'); ?>82611324741042a122dde973b0843904</li>
+                        <li style="text-align: left"><?php elang('file_name'); ?> WOW3.2.2客户端.7z.002</li>
+                        <li style="text-align: left"><?php elang('file_md5'); ?>86ec12756098fbdb28c4a56c1876e851</li>
+                        <li style="text-align: left"><?php elang('file_name'); ?> WOW3.2.2客户端.7z.003</li>
+                        <li style="text-align: left"><?php elang('file_md5'); ?>e3bcf41a877f52d1e060efae49222162</li>
+                        </ul>
+                </p>
             </div>
             <?php if(!empty(get_config('supported_langs'))) { ?>
             <div class="box1">
