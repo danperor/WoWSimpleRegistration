@@ -50,15 +50,18 @@ require_once 'header.php'; ?>
                         <?php elang('welcome_message'); ?>
                         <hr style="border-color: #00CCFF;">
                         <p style="text-align: justify">
-                            欢迎大家来到公益Z服！
-                            此服仅支持原版客户端3.3.5a版本，如果您有该客户端，无需下载。仅需修改配置即可，请查看<如何连接>页面。
+                            欢迎大家来到永久80公益服！
+                            此服仅支持原版干净客户端3.3.5a版本，无任何魔改，如果您有该客户端，无需下载。仅需修改配置即可，请查看<如何连接>页面。
                         </p>
                         <p>
                         <ul>
-                        <li style="text-align: left"><?php elang('notice'); ?> 1.百度网盘：
+                        <li style="text-align: left"><?php elang('notice'); ?> 1.天翼云盘(大部分用户推荐此方式)：https://cloud.189.cn/t/uiiYrq2MVFNn （访问码：vuo2），您可能需要安装天翼云盘客户端，下载地址：https://cloud.189.cn/web/static/download-client/index.html</li>
+                        <li style="text-align: left"><?php elang('notice'); ?> 2.百度网盘(有百度网盘会员用此链接，下载的是压缩包，需要解压)：
                             链接：https://pan.baidu.com/s/1HCwVln9FdCU1friRiLCUVw  提取码：8oct</li>
-                        <li style="text-align: left"><?php elang('notice'); ?> 2.天翼云盘：https://cloud.189.cn/t/uiiYrq2MVFNn （访问码：vuo2），您可能需要安装天翼云盘客户端，下载地址：https://cloud.189.cn/web/static/download-client/index.html</li>
-                        <li style="text-align: left"><?php elang('notice'); ?> 3.点击链接下载： <a style="text-align: left" href="http://8.142.12.63:18880/" target="_blank">http://8.142.12.63:18880/</a> 请下载完后自助校验文件MD5以确保文件未被篡改，由于文件较大，3.2.2客户端拆分成3个压缩包，请全部下载后再行解压</li>
+                        <li style="text-align: left"><?php elang('notice'); ?> 3.百度网盘(有百度网盘会员用此链接，下载的是整个文件夹所有wow的安装文件，无需解压)：
+                        链接：https://pan.baidu.com/s/1MqQze_WzEcKyxJPA-zBBpQ 提取码：5rrp</li>
+                        <li style="text-align: left"><?php elang('notice'); ?> 4.QQ群文件下载： 请加QQ群531350560，所有文件在QQ群中都有</li>
+                        <li style="text-align: left"><?php elang('notice'); ?> 5.直接在这里点击链接下载(比较不推荐)： <a style="text-align: left" href="http://8.142.12.63:18880/" target="_blank">http://8.142.12.63:18880/</a> 请下载完后自助校验文件MD5以确保文件未被篡改，由于文件较大，3.2.2客户端拆分成3个压缩包，请全部下载后再行解压</li>
                         <p></p>
                         </ul>
                         </p>
